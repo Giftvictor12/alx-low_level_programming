@@ -1,19 +1,21 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
-
 /**
-*main -> assign a random number to the variable neach time it is executed
-*and print the last digit of the number stored in
-the variable n
-*Return: Always 0 (Success)
-*/
+*main - Prints the alphabet in lowercase
+*
+*Return: 0 if success
+**/
 int main(void)
 {
-int ch;
-for (ch = 97; ch <= 122; ch++)
+char d = 'a';
+
+while (d <= 'z')
 {
-putchar(ch);
+putchar(d);
+d++;
 }
-putchar(10);/* this is an ascii code for new line*/
+putchar('\n');
 return (0);
 }
 
