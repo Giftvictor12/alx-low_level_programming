@@ -3,34 +3,31 @@
 #include <stdio.h>
 
 /**
-*main -> assign a random number to the variable n each time it is executed
-*and print the last digit of the number stored in the variable n
-*Return: Always 0 (Success)
-*/
+*main - Task 1 print the last digit of the numberstored in the variable n
+*
+*Return: Always 0
+**/
+
 int main(void)
 {
 int n;
-int x;
+char last[] = "Last digit of";
 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-
-x = n % 10;
-printf("Last digit of %d is %d", n, x);
-if (x > 5)
+/* your code goes there */
+printf("%s %d is %d and is ", last, n, n % 10);
+if (n % 10 > 5)
 {
-printf("and is greater than 5");
+printf("greater than 5\n");
 }
-if (x == 0)
+else if (n % 10 == 0)
 {
-printf("and is 0");
+printf("0\n");
 }
-if (x < 6 && x != 0)
+else
 {
-printf("and is less than 6 not 0");
+printf("less than 6 and not 0\n");
 }
-printf("\n");
-
 return (0);
 }
-
