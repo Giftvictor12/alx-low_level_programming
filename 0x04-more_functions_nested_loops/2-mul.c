@@ -1,11 +1,14 @@
-#include "main.h"
+#include "main.h"
+#include <stdio.h>
 /**
- * mul - retuens the results of the parameters
- * @a: int type number
- * @b: int type number
- * Return: 0
+ * main - check the code
+ * @a: a - variable
+ * @b: b - variable
+ * Return: Always 0.
  */
-int mul(int a, int b)
-{ 
-return (a * b);
+int mul(int a, int b);
+{
+printf("%d\n", mul(98, 1024));
+printf("%d\n", mul(-402, 4096));
+return (0);
 }
