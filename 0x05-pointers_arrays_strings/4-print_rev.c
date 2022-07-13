@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
 * print_rev - prints a string, in reverse, followed by a new line.
@@ -21,7 +22,7 @@ break;
 }
 for (count--; count >= 0; count--)
 {
-_putchar(s[count]);
+putchar(s[count]);
 }
-_putchar('\n');
+putchar('\n');
 }
